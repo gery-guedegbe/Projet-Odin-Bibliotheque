@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Bibliothèque</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <h1>Bibliothèque</h1>
+          <a href="#">Se connecter</a>
+        </div>
+      </header>
+      <div class="Btn">
+        <button onclick="" id="newBookBtn" class="First-btn">
+          + Nouveau Livre
+        </button>
+      </div>
+      <form action="" id="newBookForm" style="display: none">
+        <div class="form-container">
+          <h2>Ajouter un nouveau livre</h2>
+          <input type="text" id="titre" placeholder="Titre" required />
+          <input type="text" id="auteur" placeholder="Auteur" required />
+          <input
+            type="number"
+            id="pages"
+            placeholder="Nombre de pages"
+            required
+          />
+          <div>
+            <label for="read">Vous l'avez lu?</label>
+            <input type="checkbox" id="read" />
+          </div>
+          <input type="submit" value="Soumettre" />
+        </div>
+      </form>
+      <div class="library"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
